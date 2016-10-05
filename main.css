@@ -1,0 +1,336 @@
+@charset "UTF-8";
+
+/* color palette */
+/* 
+Coral: #ff8f81
+Grey: #646369
+Pale Yellow: #feffc6
+Sky Blue: #4974a7
+Diaper Yellow: #f8f33C
+
+/*Global Styles*/ 
+
+/*Limited Reset
+html, body, div, section, article, aside, header, hgroup, footer, nav, h1, h2, h3, h4, h5, h6, p, blockquote, address, time, span, em, strong, img, ol, figure, canvas, video, th, td, tr{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  font: inherit; 
+} */
+
+/*html5 display rule*/
+address, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, nav, menu, section, summary {
+  display:block;
+}
+
+a {
+  text-decoration: none;
+  color: #646369;
+  border-bottom: 1px solid #ff8f81
+}
+
+a.hover {
+  color: #ff8f81
+    border-bottom: 2px solid #ff8f81
+}
+
+html {
+  background: #fff;
+}
+
+body {
+  font: 100% Helvetica, Verdana, Arial, sans-serif;
+  line-height: 1.5;
+  position: relative;
+  background: #fff;
+  color: #646369;
+  font-weight: normal;
+  font-style: normal;
+  padding-left: 3.222%;
+  padding-right: 1.666%;
+}
+
+nav ul
+{list-style: none;
+}
+
+nav li
+{display: inline;}
+
+strong 
+{font-weight: bold;}
+
+em
+{ font-style: italic;}
+
+/*basic layout styles*/
+
+body {
+  max-width: 1500px;
+  width: 100%
+    min-height: 800px;
+  height: 100%;
+  margin: 0 auto;
+
+}
+
+header {
+  height: 165px;
+}
+
+article {
+  max-width: 990px;
+  width: 66%;
+  padding-right: 2.666%;
+  float: left;
+  min-height: 1500px;
+  height: 100%;
+  
+}
+
+aside {
+  max-width: 420px;
+  width: 28%;
+  min-height: 1500px;
+  height: 100%;
+  padding-top: 5%;
+  float: right;
+  
+}
+
+/* content region styles*/ 
+
+/* header styles*/ 
+
+
+
+
+
+#mainNav li {
+  width: 160px;
+  display: block;
+  float: left;
+  text-align: center;
+  font-size: 1em;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
+
+a:link {
+  color: #646369;
+}
+
+a:visited {
+  color: #4974a7;
+}
+
+a:hover {
+  color: #ff8f81;
+  }
+
+a:active {
+  color: #ff8f81;
+}
+
+/* banner styles */
+
+.banner {
+  min-height: 300px;
+  height: 100%;
+  background-image: url(./images/cloth-diaper-sale-banner.png);
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+img {
+  max-width: 100%;
+}
+
+
+/*article styles*/
+
+article h1, article h2, article h3 {
+  font-family: Helvetica, Verdana, Arial, sans-serif;
+}
+
+article h1 {
+  font-size: 1.8em;
+    border-bottom: 2px solid #ff8f81;
+  margin-bottom: 1.5em;
+}
+
+article h2 {
+  font-size: 1.5em;
+  border-bottom: 2px solid #ff8f81;
+
+  margin-bottom: 1.2em;
+  padding-top: 1.5em;
+}
+
+#footer {
+  height: 200px;
+}
+
+/*  ipads (portrait and landscape) -------------------------------------*/
+
+@media only screen and (max-width: 1024px){
+ 
+  .banner {
+  min-height: 200px;
+  height: 100%;
+  max-width: 1024px;
+    width: 100%;
+  background-image: url(./images/ipad-how-to-cloth-diaper.png);
+  background-repeat: no-repeat;
+  background-position: left;
+}
+ #mainNav li {
+  width: px;
+  display:inline;
+  float: inherit;
+  font-size: 1em;
+  padding-bottom: 5px;
+  margin-left: 20px;
+  
+}   
+  
+}
+
+
+
+/* large screen mobiles --------------------------------------*/
+
+@media only screen and (max-width:767px){
+ body {
+    font-size: 14px;
+    padding-left:1.666%; 
+    padding-right:1.666%;
+}
+  
+  
+article {
+  max-width: 767px;
+  width: 100%;
+  padding-right: .5%;
+  float: none;
+  min-height: 1000px;
+  height: 100%;
+  
+}
+
+aside {
+  max-width: 767px;
+  width: 100%;
+  min-height: 800px;
+  height: 100%;
+  padding-top: 2%;
+  float: none;
+  
+}
+  
+article h1 {
+  font-size: 1.5em;
+    border-bottom: 1.5px solid #ff8f81;
+  margin-bottom: 1em;
+}
+
+article h2 {
+  font-size: 1.3em;
+  border-bottom: 1px solid #ff8f81;
+  margin-bottom: .8em;
+  padding-top: .8em;
+}
+  
+  .banner {
+  min-height: 200px;
+  height: 100%;
+  max-width: 767px;
+    width: 100%;
+  background-image: url(./images/ipad-how-to-cloth-diaper.png);
+  background-repeat: no-repeat;
+  background-position: left;
+}
+ #mainNav li {
+  width: px;
+  display:inline;
+  float: inherit;
+  font-size: 1em;
+  padding-bottom: 5px;
+  margin-left: 20px;
+  
+}   
+   }
+
+
+
+/*iphones and other mobiles---------------------------------------------------- */
+
+@media only screen and (max-width: 480px) {
+  
+  body {
+    font-size: 12px;
+    padding-left:1%; 
+    padding-right:1%;
+}
+  
+  
+article {
+  max-width: 480px;
+  width: 100%;
+  padding-right: .5%;
+  float: none;
+  min-height: 1500px;
+  height: 100%;
+  
+}
+
+aside {
+  max-width: 480px;
+  width: 100%;
+  min-height: 1500px;
+  height: 100%;
+  padding-top: 2%;
+  float: none;
+  
+}
+  
+article h1 {
+  font-size: 1em;
+    border-bottom: 1px solid #ff8f81;
+  margin-bottom: 1em;
+}
+
+article h2 {
+  font-size: 1em;
+  border-bottom: 1px solid #ff8f81;
+  margin-bottom: .8em;
+  padding-top: .8em;
+}
+  
+  .banner {
+  min-height: 350px;
+  height: 100%;
+  max-width: 480px;
+    width: 100%;
+  background-image: url(./images/iphone-cloth-diaper-sale.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+ #mainNav li {
+  width: px;
+  display:list-item;
+  float: none;
+  text-align: center;
+  font-size: .8em;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+}   
+  
+  
+}
+
+
+
+
+
