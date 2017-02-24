@@ -279,6 +279,7 @@ article {
   max-width: 480px;
   width: 100%;
   padding-right: .5%;
+  margin: 0 auto;
   float: none;
   min-height: 1500px;
   height: 100%;
@@ -288,6 +289,7 @@ article {
 aside {
   max-width: 480px;
   width: 100%;
+  margin: 0 auto;
   min-height: 1500px;
   height: 100%;
   padding-top: 2%;
