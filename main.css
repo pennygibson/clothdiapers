@@ -1,336 +1,364 @@
-@charset "UTF-8";
+/********** colors for new site
+background-image: linear-gradient(#280f36, #632b63, #c86b98, #f09f9c, #ffc1a0);
+  border-bottom: 6px solid #280f36;
+***************/
 
-/* color palette */
-/* 
-Coral: #ff8f81
-Grey: #646369
-Pale Yellow: #feffc6
-Sky Blue: #4974a7
-Diaper Yellow: #f8f33C
+* {
+    box-sizing: border-box;
+}
 
-/*Global Styles*/ 
+body {
+font-family: 'Poiret One', cursive;
+margin: 0;
+display: flex;
+flex-direction: column;
+min-height: 100vh;
+}
 
-/*Limited Reset
-html, body, div, section, article, aside, header, hgroup, footer, nav, h1, h2, h3, h4, h5, h6, p, blockquote, address, time, span, em, strong, img, ol, figure, canvas, video, th, td, tr{
-  margin: 0;
-  padding: 0;
-  border: 0;
-  vertical-align: baseline;
-  font: inherit; 
-} */
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
 
-/*html5 display rule*/
-address, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, nav, menu, section, summary {
-  display:block;
+p {
+    font-size: 1em;
+    margin-bottom: 1.8em;
+}
+
+
+#wrapper {
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 0 10%;
+    line-height: 1.6em;
+    color: #280f36;
+    flex:1;
 }
 
 a {
-  text-decoration: none;
-  color: #646369;
-  border-bottom: 1px solid #ff8f81
+    text-decoration: none;
+    color: #c86b98;
+    font-weight: 700;
 }
 
-a.hover {
-  color: #ff8f81
-    border-bottom: 2px solid #ff8f81
+li a:hover{
+    color:#280f36;
 }
 
-html {
-  background: #fff;
+li a:active {
+    text-decoration: underline;
 }
-
-body {
-  font: 100% Helvetica, Verdana, Arial, sans-serif;
-  line-height: 1.5;
-  position: relative;
-  background: #fff;
-  color: #646369;
-  font-weight: normal;
-  font-style: normal;
-  padding-left: 3.222%;
-  padding-right: 1.666%;
-}
-
-nav ul
-{list-style: none;
-}
-
-nav li
-{display: inline;}
-
-strong 
-{font-weight: bold;}
-
-em
-{ font-style: italic;}
-
-/*basic layout styles*/
-
-body {
-  max-width: 1500px;
-  width: 100%
-    min-height: 800px;
-  height: 100%;
-  margin: 0 auto;
-
-}
-
-header {
-  height: 165px;
-}
-
-article {
-  max-width: 990px;
-  width: 66%;
-  padding-right: 2.666%;
-  float: left;
-  min-height: 1500px;
-  height: 100%;
-  
-}
-
-aside {
-  max-width: 420px;
-  width: 28%;
-  min-height: 1500px;
-  height: 100%;
-  padding-top: 5%;
-  float: right;
-  
-}
-
-/* content region styles*/ 
-
-/* header styles*/ 
-
-
-
-
-
-#mainNav li {
-  width: 160px;
-  display: block;
-  float: left;
-  text-align: center;
-  font-size: 1em;
-  text-transform: uppercase;
-  padding-bottom: 20px;
-}
-
-a:link {
-  color: #646369;
-}
-
-a:visited {
-  color: #4974a7;
-}
-
-a:hover {
-  color: #ff8f81;
-  }
-
-a:active {
-  color: #ff8f81;
-}
-
-/* banner styles */
-
-.banner {
-  min-height: 300px;
-  height: 100%;
-  background-image: url(./images/cloth-diaper-sale-banner.png);
-  background-repeat: no-repeat;
-  background-position: left;
-}
+/********** 
+work around for the current link, added a span class on each page with the class currentLink
+************/
+.currentLink {
+    color:#ffc1a0; 
+    }
 
 img {
-  max-width: 100%;
+    max-width: 100%;
 }
 
-
-/*article styles*/
-
-article h1, article h2, article h3 {
-  font-family: Helvetica, Verdana, Arial, sans-serif;
+.solution {
+    text-align:center;
+}
+.videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 25px;
+    height: 0;
 }
 
-article h1 {
-  font-size: 1.8em;
-    border-bottom: 2px solid #ff8f81;
-  margin-bottom: 1.5em;
-}
-
-article h2 {
-  font-size: 1.5em;
-  border-bottom: 2px solid #ff8f81;
-
-  margin-bottom: 1.2em;
-  padding-top: 1.5em;
-}
-
-#footer {
-  height: 200px;
-}
-
-/*  ipads (portrait and landscape) -------------------------------------*/
-
-@media only screen and (max-width: 1024px){
- 
-  .banner {
-  min-height: 200px;
-  height: 100%;
-  max-width: 1024px;
+.videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-  background-image: url(./images/ipad-how-to-cloth-diaper.png);
-  background-repeat: no-repeat;
-  background-position: left;
+    height: 100%;
 }
- #mainNav li {
-  width: px;
-  display:inline;
-  float: inherit;
-  font-size: 1em;
-  padding-bottom: 5px;
-  margin-left: 20px;
-  
-}   
-  
+/********** paragraphs on quiz questions ******/
+
+.f2{
+    margin-bottom:.2em;
 }
 
-
-
-/* large screen mobiles --------------------------------------*/
-
-@media only screen and (max-width:767px){
- body {
-    font-size: 14px;
-    padding-left:1.666%; 
-    padding-right:1.666%;
+.last {
+    margin-bottom: 2em;
 }
-  
-  
-article {
-  max-width: 767px;
-  width: 100%;
-  padding-right: .5%;
-  float: none;
-  min-height: 1000px;
-  height: 100%;
-  
-}
+/***************************************
+Heading
+****************************************/
 
-aside {
-  max-width: 767px;
-  width: 100%;
-  min-height: 800px;
-  height: 100%;
-  padding-top: 2%;
-  float: none;
-  
-}
-  
-article h1 {
-  font-size: 1.5em;
-    border-bottom: 1.5px solid #ff8f81;
-  margin-bottom: 1em;
-}
-
-article h2 {
-  font-size: 1.3em;
-  border-bottom: 1px solid #ff8f81;
-  margin-bottom: .8em;
-  padding-top: .8em;
-}
-  
-  .banner {
-  min-height: 200px;
-  height: 100%;
-  max-width: 767px;
+header {
+    margin: 0;
     width: 100%;
-  background-image: url(./images/ipad-how-to-cloth-diaper.png);
-  background-repeat: no-repeat;
-  background-position: left;
+    height: 150px;
+    background-image: linear-gradient(#280f36, #632b63, #c86b98, #f09f9c, #ffc1a0);
+    border-bottom: 6px solid #280f36;
+    
 }
- #mainNav li {
-  width: px;
-  display:inline;
-  float: inherit;
-  font-size: 1em;
-  padding-bottom: 5px;
-  margin-left: 20px;
-  
-}   
+
+#name {
+    font-size: 3em;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    }
+
+#tag {
+    font-size: 1.2em;
+    text-align: center;
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 0 5px;
+}
+
+/*************************************
+Navigation
+**************************************/
+
+#mainNav a {
+    text-align: center;
+    display: block;
+    font-weight: 700;
+    font-size: 1.2em;
+    padding: 10px; 
+}
+
+/**************************************
+Footer
+***************************************/
+footer {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    height: 80px;
+    background-color:#ffc1a0;
+}
+
+footer ul {
+    list-style: none;
+    }
+footer a {
+    display: inline;
+    color: #fff;
+    }
+footer li {
+    display: inline;
+    padding: 30px;
+    margin-right: 5px;
    }
 
-
-
-/*iphones and other mobiles---------------------------------------------------- */
-
-@media only screen and (max-width: 480px) {
-  
-  body {
-    font-size: 12px;
-    padding-left:1%; 
-    padding-right:1%;
-}
-  
-  
-article {
-  max-width: 480px;
-  width: 100%;
-  padding-right: .5%;
-  margin: 0 auto;
-  float: none;
-  min-height: 1500px;
-  height: 100%;
-  
-}
-
+/***************************************
+ASIDE
+****************************************/
 aside {
-  max-width: 480px;
-  width: 100%;
-  margin: 0 auto;
-  min-height: 1500px;
-  height: 100%;
-  padding-top: 2%;
-  float: none;
-  
-}
-  
-article h1 {
-  font-size: 1em;
-    border-bottom: 1px solid #ff8f81;
-  margin-bottom: 1em;
+    display: block;
+    margin-right: 35px;
 }
 
-article h2 {
-  font-size: 1em;
-  border-bottom: 1px solid #ff8f81;
-  margin-bottom: .8em;
-  padding-top: .8em;
-}
+
+aside ul {
+  list-style:none;
   
-  .banner {
-  min-height: 350px;
-  height: 100%;
-  max-width: 480px;
-    width: 100%;
-  background-image: url(./images/iphone-cloth-diaper-sale.png);
-  background-repeat: no-repeat;
-  background-position: center;
+ }
+
+
+aside li {
+    float:left;
+    width:50%;
+    }
+
+/***************************************
+Test/Quiz Page
+****************************************/
+.button {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    height: 50px;
+    color:#fff;
+    background-image: linear-gradient(#280f36, #632b63, #c86b98,
+    #f09f9c, #ffc1a0);
+    border: 3px #280f36 solid;
+    font-size: 1.3em;
+    border-radius: 5px;
 }
- #mainNav li {
-  width: px;
-  display:list-item;
-  float: none;
-  text-align: center;
-  font-size: .8em;
-  text-transform: uppercase;
-  padding-bottom: 5px;
-}   
-  
-  
+
+/***************************************
+shop page
+****************************************/
+.products {
+    display: block;
+    margin: 0 auto;
+    list-style: none;
+    padding: 0;
+    }
+.products li {
+    float: left;
+    width: 50%;
 }
+.whybb {
+    text-align:center;
+}
+
+.paypal{
+    text-align:center;
+}
+.price {
+    text-align: center;
+    font-size: 1.4em;
+}
+.limitedQuantity {
+    text-align: center;
+    font-size: 1.2em;
+}
+/***************************************
+Home page
+****************************************/
+.testimonials {
+    display: block;
+    margin: 0 auto;
+    list-style: none;
+    padding:0;
+}
+.testimonials li {
+    float: left;
+    width: 33%;
+}
+
+
+/***************************************
+Washing page
+****************************************/
+.wash {
+    border-radius:7px;
+}
+/***************************************
+Media Queries
+****************************************/
+
+
+
+@media(min-width:660px) {
+    header {
+        height: 110px;
+    }
+    #name {
+        font-size:3.8em;
+    }
+    #tag{
+        padding-top:8px;
+    }
+    #mainNav {
+       text-align: center;
+        margin: 10px 0 ;
+        display: flex;
+        justify-content:center;
+        flex-wrap:wrap;
+       }
+    
+    #mainNav a {
+        display: inline-block;
+    }
+    
+    #mainNav li {
+        display: inline;
+        padding 15px;
+    }
+    
+    footer a {
+        font-size: 1.5em;
+    
+    }
+    
+}
+
+@media (min-width:800px){
+    aside li {
+        width:30%;
+}
+    .bb {
+        width: 50%;
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .fullKit {
+        display: block;
+        margin: 0 auto;
+        width: 60%;
+        border: 3px solid #280f36;
+        border-radius: 7px;
+    }
+    .products li {
+        width: 33%;
+    }
+    
+}
+
+@media (min-width: 1025px) {
+    article {
+        width: 70%;
+        float: left;
+}
+    p {
+        font-size:1.2em;
+    }
+    
+    aside {
+        width: 30%;
+        float: right;
+        margin: 0 auto;
+    }
+    
+    aside ul {
+        padding-top:10px;
+        
+    }
+    
+    aside li {
+        width: 100%;
+        padding-bottom: 20px;
+    }
+    
+    .bb {
+        width:50%;
+        float:left;
+        padding-right: 10px;
+    }
+    
+    #tag {
+        font-size: 1.5em;
+    }
+    
+    /******* shop page ******/
+    .shop {
+        width:50;
+        right: left;
+        
+    }
+    
+    .fullKit {
+        width:50%;
+        float: left;
+        border-right: 3px solid #280f36;
+        margin-right: 5px;
+    }
+    
+    /********* home page bottom images **********/
+    .testimonials li{
+        padding: 7px;
+    }
+    
+}
+
+/*******************
+aside previous
+********************/
+
 
 
 
