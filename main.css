@@ -26,6 +26,9 @@ p {
     margin-bottom: 1.8em;
 }
 
+h1, h2 {
+  text-align: center;
+}
 
 #wrapper {
     max-width: 1250px;
@@ -148,7 +151,6 @@ footer a {
 footer li {
     display: inline;
     padding: 30px;
-    margin-right: 5px;
    }
 
 /***************************************
@@ -185,6 +187,9 @@ Test/Quiz Page
     border: 3px #280f36 solid;
     font-size: 1.3em;
     border-radius: 5px;
+}
+.space {
+  margin-bottom: 17px;
 }
 
 /***************************************
@@ -296,6 +301,9 @@ Media Queries
     .products li {
         width: 33%;
     }
+  .cloth101 {
+    text-align: left;
+  }
     
 }
 
@@ -352,6 +360,9 @@ Media Queries
     .testimonials li{
         padding: 7px;
     }
+  .space {
+    margin-bottom: 0;
+  }
     
 }
 
